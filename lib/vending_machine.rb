@@ -3,7 +3,7 @@ class VendingMachine
   require './lib/finder.rb'
   include Finder
 
-  attr_reader :stock, :cashier,:balance, :sales
+  attr_reader :stock, :balance, :sales
 
   MONEY = [10, 50, 100, 500, 1000].freeze
 
@@ -32,7 +32,7 @@ class VendingMachine
   end
 
   def receive_money(money)
-    return money unless MONEY.include?(money)
+    return balance unless MONEY.include?(money)
     calculate_balance(money)
   end
 
@@ -41,7 +41,6 @@ class VendingMachine
   end
 
   private
-
   def calculate_balance(money)
     @balance += money
   end
