@@ -8,7 +8,7 @@
 
 ##### 自動販売機をインスタンス化
 
-``require './vending_machine.rb'``
+``vm = VendingMachine.new``
 
 
 ### 消費者の行動を想定した処理
