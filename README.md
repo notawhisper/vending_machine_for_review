@@ -4,7 +4,7 @@
 
 ##### ディレクトリに移動後、ファイルを読み込む
 
-``require './vending_machine.rb'``
+``require './lib/vending_machine.rb'``
 
 ##### 自動販売機をインスタンス化
 

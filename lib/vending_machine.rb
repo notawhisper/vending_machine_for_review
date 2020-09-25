@@ -1,6 +1,6 @@
 class VendingMachine
-  require './stock.rb'
-  require './finder.rb'
+  require './lib/stock.rb'
+  require './lib/finder.rb'
   include Finder
 
   attr_reader :stock, :cashier,:balance, :sales

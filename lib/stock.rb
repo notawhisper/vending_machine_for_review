@@ -1,5 +1,5 @@
 class Stock
-  require './finder.rb'
+  require './lib/finder.rb'
   include Finder
   attr_reader :products
   def initialize
