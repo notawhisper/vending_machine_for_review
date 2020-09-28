@@ -14,7 +14,7 @@ class VendingMachine
   end
 
   def available_products
-    stock.products.select { |product| balance > product[:price] && product[:stock] > 0}
+    stock.products.select { |product| balance >= product[:price] && product[:stock] > 0}
   end
 
   def available?(name)
